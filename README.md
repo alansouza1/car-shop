@@ -1,35 +1,35 @@
-# Sobre o Projeto
+# Car Shop API
 
-Neste projeto foi desenvolvida uma _API_, utilizando _TypeScript_.
+This project is a REST API developed using **TypeScript**.
 
-No projeto foram aplicados os princípios de Programação Orientada a Objetos(**POO**) para a construção de uma API com **CRUD** para gerenciar uma concessionária de veículos. Isso será feito utilizando o banco de dados **MongoDB** .
+The project applies Object-Oriented Programming (**OOP**) principles to build a CRUD API for managing a vehicle dealership. It uses **MongoDB** as the database.
 
-O projeto foi desenvolvido utilizando as camadas _Models_, _Services_ e _Controllers_(_MSC_).
+The project follows the **MSC** (Model, Service, Controller) architecture.
 
-Foram criados alguns _endpoints_ que irão ler e escrever em um banco de dados, utilizando o ODM Mongoose.
+The endpoints interact with the database using the **Mongoose** ODM.
 
-Foram feitos alguns testes testes unitários nas três camadas utilizando as ferramentas _Mocha_, _Chai_ e _Sinon_.
+Unit tests were implemented for all three layers using **Mocha**, **Chai**, and **Sinon**.
 
-# Rodando o Projeto
+# Running the Project
 
-### Requisitos:
+### Prerequisites:
 - Node.js 16
 - Docker
 - Docker Compose
 
-Depois de clonar o repositório instale as dependências do npm com o comando:
+After cloning the repository, install the dependencies with:
 ```
 npm install
 ```
-Inicie o docker utilizando o comando:
+Start Docker using the command:
 ```
 docker-compose up -d
 ```
-Para executar os testes unitários rode o comando:
+To run the unit tests, use:
 ```
 docker exec -it car_shop npm run test:dev
 ```
-E por fim, inicie o servidor back-end com o comando:
+Finally, start the back-end server with:
 ```
 docker exec -it car_shop npm run dev
 ```
