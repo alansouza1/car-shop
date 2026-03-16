@@ -23,11 +23,9 @@ The project applies Object-Oriented Programming (**OOP**) principles to build a 
 - **Testing:** [Mocha](https://mochajs.org/), [Chai](https://www.chaijs.com/), [Sinon](https://sinonjs.org/)
 - **Containerization:** [Docker](https://www.docker.com/)
 
-The project follows the **MSC** (Model, Service, Controller) architecture.
-
-The endpoints interact with the database using the **Mongoose** ODM.
-
-Unit tests were implemented for all three layers using **Mocha**, **Chai**, and **Sinon**.
+## 📖 API Documentation
+The API documentation is generated using Swagger. Once the server is running, you can explore the available endpoints and try them out at:
+[http://localhost:3001/api-docs](http://localhost:3001/api-docs)
 
 # Running the Project
 
