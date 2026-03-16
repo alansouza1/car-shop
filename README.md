@@ -6,8 +6,7 @@ The project applies Object-Oriented Programming (**OOP**) principles to build a 
 
 ## 🚀 Features
 - **CRUD for Vehicles:** Create, Read, Update, and Delete vehicle records.
-- **POO Principles:** Designed with Inheritance, Polymorphism, Abstraction, and Encapsulation.
-- **Generic Base Classes:** Optimized controller layer using `BaseController<T>` for consistent CRUD behavior.
+- **POO Principles:**
 - **MSC Architecture:** Clean separation of concerns into Model, Service, and Controller layers.
 - **Data Validation:** Strict schema validation and type safety using **Zod**.
 - **Unit Testing:** 100% test coverage for all architecture layers using the TDD approach.
