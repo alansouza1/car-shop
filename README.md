@@ -1,30 +1,25 @@
-# Car Shop API
+# Car Shop API & Frontend
 
-This project is a REST API developed using **TypeScript**, focusing on **SOLID** principles and clean architecture.
+This project is a full-stack application for managing a vehicle dealership, built with **TypeScript**, **Node.js**, **Express**, **MongoDB**, and **React**.
 
-The project applies Object-Oriented Programming (**OOP**) principles to build a CRUD API for managing a vehicle dealership. It uses **MongoDB** as the database and follows the **MSC** (Model, Service, Controller) architecture.
+## 🏗 Project Structure
+- **/backend**: REST API following MSC architecture, built with Mongoose and Zod.
+- **/frontend**: Modern React dashboard with a dark-themed UI, built with Vite.
 
 ## 🚀 Features
-- **CRUD for Vehicles:** Create, Read, Update, and Delete vehicle records.
-- **POO Principles:**
-- **MSC Architecture:** Clean separation of concerns into Model, Service, and Controller layers.
-- **Data Validation:** Strict schema validation and type safety using **Zod**.
-- **Unit Testing:** 100% test coverage for all architecture layers using the TDD approach.
-- **Interactive Documentation:** Explore and test endpoints live via **Swagger UI**.
+- **Full CRUD for Vehicles:** Manage inventory through a professional UI or directly via API.
+- **POO Principles:** Backend designed with Inheritance, Polymorphism, and Abstraction.
+- **Data Validation:** Strict schema validation using **Zod** on both sides.
+- **Interactive Documentation:** Explore and test the API live via **Swagger UI**.
+- **Dockerized Environment:** One-command setup for the entire stack.
 
 ## 🛠 Tech Stack
-- **Language:** [TypeScript](https://www.typescriptlang.org/)
-- **Runtime:** [Node.js](https://nodejs.org/)
-- **Framework:** [Express](https://expressjs.com/)
-- **Database:** [MongoDB](https://www.mongodb.com/)
-- **ODM:** [Mongoose](https://mongoosejs.com/)
-- **Validation:** [Zod](https://zod.dev/)
-- **Documentation:** [Swagger](https://swagger.io/)
-- **Testing:** [Mocha](https://mochajs.org/), [Chai](https://www.chaijs.com/), [Sinon](https://sinonjs.org/)
-- **Containerization:** [Docker](https://www.docker.com/) & [Docker Compose](https://docs.docker.com/compose/)
+- **Backend:** Node.js, Express, MongoDB, Mongoose, Zod, Swagger, Mocha/Chai/Sinon.
+- **Frontend:** React 18, Vite, TypeScript, Vanilla CSS.
+- **DevOps:** Docker, Docker Compose.
 
 ## 📖 API Documentation
-The API documentation is generated using Swagger. Once the server is running, you can explore the available endpoints and try them out at:
+Once the server is running, explore the endpoints at:
 👉 [http://localhost:3001/api-docs](http://localhost:3001/api-docs)
 
 # 🏁 Getting Started
@@ -33,25 +28,23 @@ The API documentation is generated using Swagger. Once the server is running, yo
 - Docker and Docker Compose installed.
 
 ### 1. Setup & Start
-Clone the repository and start the environment. The server will boot up automatically once the database is healthy.
+Clone the repository and start the entire environment:
 ```bash
-docker-compose up -d
+docker-compose up -d --build
 ```
 
-### 2. Verify Connection
-The API will be available at `http://localhost:3001`. You can test the health of the service by listing cars:
-```bash
-curl http://localhost:3001/cars
-```
+### 2. Access the Application
+- **Frontend:** [http://localhost:5173](http://localhost:5173)
+- **Backend API:** [http://localhost:3001](http://localhost:3001)
 
-### 3. Run Tests
-To execute the unit tests inside the container, run:
+### 3. Run Backend Tests
+To execute the backend unit tests:
 ```bash
 docker exec car_shop npm run test:dev
 ```
 
 ### 4. Code Quality
-Check for linting errors:
+Check for linting errors in the backend:
 ```bash
 docker exec car_shop npm run lint
 ```

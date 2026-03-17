@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   node:
-    build: .
+    build: ./backend
     container_name: car_shop
     working_dir: /app
     depends_on:
