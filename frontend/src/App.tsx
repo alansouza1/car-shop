@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useCars } from './hooks/useCars';
 import { CarCard } from './components/CarCard';
 import { CarForm } from './components/CarForm';
-import type { ICar } from './types/index';
+import { ICar } from './types/index.ts';
 import styles from './App.module.css';
 
 function App() {

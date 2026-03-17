@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import type { ICar } from '../types/index';
+import { ICar } from '../types/index.ts';
 import styles from './CarForm.module.css';
 
 interface CarFormProps {
