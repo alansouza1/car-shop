@@ -1,0 +1,96 @@
+.card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--accent-blue);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.colorIndicator {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid var(--glass-border);
+}
+
+.model {
+  margin: 0;
+  font-size: 1.25rem;
+  flex-grow: 1;
+}
+
+.year {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detailItem {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.label {
+  color: var(--text-secondary);
+}
+
+.value {
+  font-weight: 600;
+}
+
+.available {
+  color: var(--success);
+}
+
+.sold {
+  color: var(--error);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.editBtn {
+  background: var(--bg-accent);
+  color: var(--text-primary);
+  flex-grow: 1;
+}
+
+.editBtn:hover {
+  background: var(--accent-blue);
+}
+
+.deleteBtn {
+  background: transparent;
+  color: var(--error);
+  border: 1px solid var(--error);
+}
+
+.deleteBtn:hover {
+  background: var(--error);
+  color: var(--text-primary);
+}

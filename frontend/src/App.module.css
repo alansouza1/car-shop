@@ -1,0 +1,68 @@
+.app {
+  min-height: 100vh;
+}
+
+.navbar {
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  padding: 16px 0;
+  margin-bottom: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: var(--accent-blue);
+}
+
+.addBtn {
+  background: var(--accent-blue);
+  color: var(--text-primary);
+}
+
+.addBtn:hover {
+  background: var(--accent-blue-hover);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  padding-bottom: 40px;
+}
+
+.error {
+  background: rgba(255, 77, 77, 0.1);
+  color: var(--error);
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--error);
+  margin-bottom: 24px;
+}
+
+.loading, .empty {
+  text-align: center;
+  padding: 80px 0;
+  color: var(--text-secondary);
+}
+
+.empty p {
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+}

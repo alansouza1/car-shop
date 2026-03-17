@@ -5,9 +5,6 @@ services:
     build: .
     container_name: car_shop
     working_dir: /app
-    volumes:
-      - ./:/app
-      - /app/node_modules # Avoid overwriting node_modules inside the container
     depends_on:
       mongodb:
         condition: service_healthy
@@ -15,6 +12,17 @@ services:
       - 3001:3001
     environment:
       - MONGO_URI=mongodb://mongodb:27017/CarShop
+    restart: always
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: car_shop_frontend
+    ports:
+      - 5173:5173
+    depends_on:
+      - node
     restart: always
 
   mongodb:
