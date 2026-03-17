@@ -26,10 +26,21 @@ describe('Car Service', () => {
 			expect(carCreated).to.be.deep.equal(carMockWithId);
 		});
 
-		it('Failure', async () => {
+		it('Failure - Empty Object', async () => {
 			let error;
 			try {
 				await carService.create({});
+			} catch (err) {
+				error = err
+			}
+
+			expect(error).to.be.instanceOf(ZodError);
+		});
+
+		it('Failure - Year > 2026', async () => {
+			let error;
+			try {
+				await carService.create({ ...carMock, year: 2027 });
 			} catch (err) {
 				error = err
 			}
