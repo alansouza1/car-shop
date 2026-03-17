@@ -1,4 +1,4 @@
-export interface IVehicle {
+export type IVehicle = {
   model: string;
   year: number;
   color: string;
@@ -6,7 +6,7 @@ export interface IVehicle {
   buyValue: number;
 }
 
-export interface ICar extends IVehicle {
+export type ICar = IVehicle & {
   _id?: string;
   doorsQty: number;
   seatsQty: number;
