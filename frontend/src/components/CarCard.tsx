@@ -1,4 +1,4 @@
-import { ICar } from '../types';
+import type { ICar } from '../types/index';
 import styles from './CarCard.module.css';
 
 interface CarCardProps {

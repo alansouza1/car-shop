@@ -1,4 +1,4 @@
-import { ICar } from '../types';
+import type { ICar } from '../types/index';
 
 const API_URL = 'http://localhost:3001/cars';
 

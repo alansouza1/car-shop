@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { ICar } from '../types';
+import type { ICar } from '../types/index';
 import { carService } from '../services/carService';
 
 export function useCars() {
