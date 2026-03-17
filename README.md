@@ -1,5 +1,7 @@
 # Car Shop API & Frontend
 
+![Project Screenshot](docs/images/screenshot.png)
+
 This project is a full-stack application for managing a vehicle dealership, built with **TypeScript**, **Node.js**, **Express**, **MongoDB**, and **React**.
 
 ## 🏗 Project Structure
