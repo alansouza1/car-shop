@@ -26,25 +26,21 @@ Once the server is running, explore the endpoints at:
 
 ### Prerequisites:
 - Docker and Docker Compose installed.
+- Node.js (only for using convenience scripts).
 
 ### 1. Setup & Start
-Clone the repository and start the entire environment:
+Clone the repository and start the entire environment using the root convenience script:
 ```bash
-docker-compose up -d --build
+npm run dev
 ```
 
 ### 2. Access the Application
 - **Frontend:** [http://localhost:5173](http://localhost:5173)
 - **Backend API:** [http://localhost:3001](http://localhost:3001)
 
-### 3. Run Backend Tests
-To execute the backend unit tests:
-```bash
-docker exec car_shop npm run test:dev
-```
-
-### 4. Code Quality
-Check for linting errors in the backend:
-```bash
-docker exec car_shop npm run lint
-```
+### 3. Management Commands
+You can manage the project using these root-level commands:
+- `npm run stop`: Stop all containers.
+- `npm run logs`: View live logs for all services.
+- `npm run backend:test`: Execute backend unit tests.
+- `npm run backend:lint`: Check for linting errors in the backend.
