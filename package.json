@@ -1,0 +1,12 @@
+{
+  "name": "car-shop-orchestrator",
+  "version": "1.0.0",
+  "description": "Orchestration scripts for Car Shop project",
+  "scripts": {
+    "dev": "docker-compose up -d --build",
+    "stop": "docker-compose down",
+    "logs": "docker-compose logs -f",
+    "backend:test": "docker exec car_shop npm run test:dev",
+    "backend:lint": "docker exec car_shop npm run lint"
+  }
+}
