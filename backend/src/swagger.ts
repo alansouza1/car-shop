@@ -15,7 +15,7 @@ const options: swaggerJSDoc.Options = {
           required: ['model', 'year', 'color', 'buyValue', 'doorsQty', 'seatsQty'],
           properties: {
             model: { type: 'string', minLength: 3 },
-            year: { type: 'integer', minimum: 1900, maximum: 2022 },
+            year: { type: 'integer', minimum: 1900, maximum: 2026 },
             color: { type: 'string', minLength: 3 },
             status: { type: 'boolean' },
             buyValue: { type: 'integer' },

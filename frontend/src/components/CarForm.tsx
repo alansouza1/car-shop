@@ -10,7 +10,7 @@ interface CarFormProps {
 
 const emptyCar: ICar = {
   model: '',
-  year: 2022,
+  year: 2026,
   color: '',
   status: true,
   buyValue: 0,
@@ -62,7 +62,7 @@ export function CarForm({ initialData, onSubmit, onCancel }: CarFormProps) {
             </div>
             <div className={styles.field}>
               <label>Year</label>
-              <input type="number" name="year" value={formData.year} onChange={handleChange} min={1900} max={2022} required />
+              <input type="number" name="year" value={formData.year} onChange={handleChange} min={1900} max={2026} required />
             </div>
             <div className={styles.field}>
               <label>Color</label>
